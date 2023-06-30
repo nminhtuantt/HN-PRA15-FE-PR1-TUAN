@@ -1,0 +1,32 @@
+$product-item-width: 48%;
+
+.product {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, $product-item-width);
+        grid-gap: 1rem;
+    }
+    
+    &__item {
+        width: $product-item-width;
+        display: inline-block;
+        vertical-align: top;
+        
+        &__image {
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+        }
+        
+        &__title {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        }
+        
+        &__meta {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        }
+    }
+    }

@@ -1,0 +1,119 @@
+header {
+  background-color:black;
+  padding: 30px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo {
+      img {
+        margin-right: 150px;
+        max-width: 700px;
+        height: 50px;
+        width: auto;
+      }
+    }
+    
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          margin-left: 20px;
+          
+          &:first-child {
+            margin-left: 0;
+          }
+          
+          a {
+            color:beige;
+            text-decoration: none;
+            font-weight: bold;
+            
+            &:hover {
+              color: #FFD700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin media($breakpoint) {
+  @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo img {
+    margin-right: 150px;
+    max-width: 700px;
+    height: 50px;
+    width: auto;
+
+    @include media(md) {
+      margin-right: 40px;
+    }
+
+    @include media(sm) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  nav {
+    ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      @include media(md) {
+        display: flex;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+
+      @include media(sm) {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+      }
+    }
+
+    ul.show {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 20px;
+
+      li {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #666;
+      }
+    }
+  }
+}

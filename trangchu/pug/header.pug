@@ -1,0 +1,15 @@
+header.header
+  .header__top
+        nav
+          ul.menus
+            each item in ['Tài khoản của tôi', 'Trạng thái đơn hàng', 'Danh sách ưu thích', 'Giỏ hàng', 'Đăng nhập', 'Đăng ký']
+              li.menus__item
+                a.menus__link(href="#") #{item}
+  .header__container
+    .logo
+      img(src="./img/logo.png", alt="Logo")
+    nav
+      ul.menu
+        each item in ['TRANG CHỦ', 'RƯỢU VANG ĐỎ', 'RƯỢU TRẮNG', 'CHAMPAGNE', 'THÔNG TIN', 'BLOG', 'LIÊN HỆ']
+          li.menu__item
+            a.menu__link(href="#") #{item}
