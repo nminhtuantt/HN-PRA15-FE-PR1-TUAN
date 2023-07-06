@@ -1,0 +1,7 @@
+section
+        nav.nv 
+        - var menuItems = ['Trang chủ','/','Giới thiệu','/','Sản phẩm','/','Giỏ hàng'];
+        - var links = ['#', '#','./introduce.html','#', '#','#'];
+        ul.menu
+            each item, index in menuItems
+                a.menu__link(href=links[index])= item

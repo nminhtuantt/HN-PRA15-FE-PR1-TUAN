@@ -1,0 +1,16 @@
+main
+    section.product
+    .container
+        nav.nv 
+        - var menuItems = ['Trang chủ/', 'Sản phẩm/', 'Rượu vang đỏ'];
+        - var links = ['#', '#', '#'];
+        ul.menu
+            each item, index in menuItems
+                a.menu__link(href=links[index])= item 
+            .product__image
+            img(srcset='./img/7.jpg' alt='')
+            a.g-link.product__link(href='#') Đặc điểm nổi bật
+            p
+            
+        .product__item
+            

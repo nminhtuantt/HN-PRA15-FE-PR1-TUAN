@@ -1,0 +1,68 @@
+main 
+    div.login
+        p.login__link GIỎ HÀNG
+            img.login__img(src="./img/titleleft-dark.png", alt="")
+    table.cart
+        thead
+            tr
+            th ẢNH
+            th TÊN SẢN PHẨM
+            th GIÁ
+            th SỐ LƯỢNG
+            th TỔNG SỐ
+            th XOÁ
+        tbody
+            tr
+            td
+                img(src='./img/ordersp.jpeg')
+            td RƯỢU VANG ĐỎ
+            td.cart__price 345.000đ
+            td 
+                input(type='number' min='1' value='1')
+            td.cart__price 345.00đ
+            td 
+                button  Remove
+            tr
+            td
+                img(src='./img/ordersp.jpeg')
+            td HUMBUGER THỊT BÒ
+            td.cart__price 345.000đ
+            td
+                input(type='number' min='1' value='1')
+            td.cart__price 345.000đ
+            td
+                button Remove
+            tr
+            td
+                img(src='./img/ordersp.jpeg')
+            td HUMBUGER THỊT BÒ
+            td.cart__price 345.000đ
+            td
+                input(type='number' min='1' value='1')
+            td.cart__price 345.000đ
+            td
+                button Remove
+            tr
+            td
+                img(src='./img/ordersp.jpeg')
+            td HUMBUGER THỊT BÒ
+            td.cart__price 345.000đ
+            td
+                input(type='number' min='1' value='1')
+            td.cart__price 345.000đ
+            td
+                button Remove
+            tr
+            td
+                img(src='./img/ordersp.jpeg')
+            td HUMBUGER THỊT BÒ
+            td.cart__price 345.000đ
+            td
+                input(type='number' min='1' value='1')
+            td.cart__price 345.000đ
+            td
+                button Remove
+    div.carts
+        +button('carts__button', "window.location.href='#'", 'Tiếp tục mua hàng')
+        +button('carts__button', "window.location.href='#'", 'Xoá')
+        +button('carts__button', "window.location.href='#'", 'Cập nhật')

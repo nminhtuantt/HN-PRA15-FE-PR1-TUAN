@@ -1,0 +1,66 @@
+table.cart {
+  margin-bottom: 25px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+  th, td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+  }
+  .cart__price{
+    color: $yellows-color;
+  }
+  th:last-child, td:last-child {
+    border-right: none;
+  }
+  img {
+    display: flex; 
+    justify-content: center;
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto; 
+  }
+  th {
+    background-color: $palewhite;
+    border-top: 2px solid $border-color;
+    border-left: 2px solid $border-color; 
+  }
+  tr:nth-child(even) {
+    background-color: $palewhite;
+  }
+  input[type='number'] {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  button {
+    padding: 5px 10px;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 5px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+.carts{
+  text-align: right;
+  .carts__button {
+    margin-left: auto;
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+}

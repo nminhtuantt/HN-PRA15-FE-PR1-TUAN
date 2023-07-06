@@ -1,0 +1,13 @@
+.nv {
+    padding-bottom: 20px;
+  }
+.menu__link {
+    text-decoration: none; 
+    color: $secondary-color; 
+    &:hover {
+      color: $yellow-color; 
+    }
+    &:active {
+      color: $yellow-color; 
+    }
+  }

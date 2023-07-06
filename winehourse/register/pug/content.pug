@@ -1,0 +1,32 @@
+main 
+    div.login
+        p.login__link ĐĂNG KÝ
+            img.login__img(src="./img/titleleft-dark.png", alt="")
+        +button('login__button', "window.location.href='./login.html'", 'ĐĂNG NHẬP')        
+    div.login-form
+        h3  THÔNG TIN CÁ NHÂN  
+        p    
+        .input-container
+            label(for="email") Tên trước *                    
+            input(type="email" id="email" name="email" placeholder="")
+        .input-container
+            label(for="email") Tên sau *
+            input(type="email" id="email" name="email" placeholder="")      
+        .input-container
+            label(for="email") Email *                    
+            input(type="email" id="email" name="email" placeholder="")
+        .input-container
+            label(for="password") Passwork *
+            input(type="password" id="password" name="password" placeholder="")
+        a.forgot-password(href="#") Đăng ký nhận bản tin
+        h3 THÔNG TIN ĐĂNG NHẬP 
+        p
+        .input-container
+            label(for="password") Mật khẩu*
+            input(type="password" id="password" name="password" placeholder="")
+        .input-container
+            label(for="password") Xác nhận mật khẩu*
+            input(type="password" id="password" name="password" placeholder="")
+        div.logins
+            +button('logins__button', "window.location.href='#'", 'GỬI')
+            +button('logins__button', "window.location.href='#'", 'QUAY LẠI')

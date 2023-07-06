@@ -1,0 +1,31 @@
+footer
+    div.logo
+        img(src="./img/logofooter.png", alt="")
+    div.container
+        .column.columnt
+            .columntt
+                - var items = ['VỀ CHÚNG TÔI', 'GIAO HÀNG', 'CAM NGHĨ', 'LƯU CHỮ', 'CHÍNH SÁCH RIÊNG TƯ']
+                h3 THÔNG TIN
+                ul
+                    each item in items
+                        li
+                            a(href='#') #{item}
+            .columntt
+                - var items = ['VẬN CHUYỂN VÀ TRA HÀNG', 'MUA HÀNG AN TOÀN', 'VẬN CHUYỂN QUỐC TẾ', 'LIÊN KẾT', 'DỊCH VỤ GIẢM GIÁ']
+                h3 MUA HÀNG
+                ul
+                    each item in items
+                        li
+                            a(href='#') #{item}
+        .column
+            h3 GIỬI EMAIL
+            p Giửi email cho chúng tôi để được hỗ trợ 
+            form(action='#')
+                input(type='email', placeholder='Enter your email')
+                button(type='submit') Gửi
+        .column
+            h3 LIÊN HỆ
+            ul
+                li Tầng 4, Toà nhà hanoi Group số 442 Đội Cấn P.Cống Vị, Ba Đình, Hà Nội
+                li (04) 2323 4323
+                li (08) 223 4999   support@bizweb.vn

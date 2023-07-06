@@ -1,0 +1,16 @@
+main 
+    div.login
+        p.login__link ĐĂNG NHẬP
+            img.login__img(src="./img/titleleft-dark.png", alt="")
+        +button('login__button', "window.location.href='./register.html'", 'ĐĂNG KÝ')
+    div.login-form
+        h3 KHÁCH HÀNG ĐĂNG NHẬP
+        p Nếu bạn có một tài khoản xin vui lòng đăng nhập.              
+        .input-container
+            label(for="email") Email*                    
+            input(type="email" id="email" name="email" placeholder="")
+        .input-container
+            label(for="password") Passwork*
+            input(type="password" id="password" name="password" placeholder="")
+        a.forgot-password(href="#") Quên mật khẩu?
+        button.login-button(onclick="window.location.href= '#'") ĐĂNG NHẬP
