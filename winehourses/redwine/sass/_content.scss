@@ -1,0 +1,205 @@
+main{
+    margin-top: 20px;
+}
+.redwine{
+    display: flex;
+    flex-wrap: wrap;
+    .redwine__product{
+        width: 53%;
+        margin-right: 20px;
+    }
+    .redwine__detail{
+        width: 45%;
+        .redwine__detail-logo{
+            h2{
+                font-size: 30px;
+            }
+            .price{
+                font-size: 30px;
+                color: $yellow-color;
+            }
+            .quantity__button{
+                background-color: $secondary-color;
+                color: $primary-color;
+                padding: 5px 27px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .color-picker{
+                display: flex;    
+                .red {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 10%;
+                    cursor: pointer;
+                    background-color:$red-color ;
+                    }
+                .black{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 10%;
+                    cursor: pointer;
+                    background-color:$secondary-color ;
+                }
+                .orange{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 10%;
+                    cursor: pointer;
+                    background-color:$yellows-color ;
+                }
+            }
+        h3{
+            margin-top: 20px;
+        }
+        p {
+            text-indent: 20px;
+            color: $time-cloer;
+          }
+        .select-container{
+            select {
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 6px;
+                color: $time-cloer;
+              }
+           
+        }
+        }
+    }
+}
+
+.outstanding{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    .voutstanding__product{
+        width: 60%;
+        .voutstanding__product-button{
+            p{
+                text-indent: 20px;
+                color:$time-cloer;
+                margin-bottom: 10px;
+            }
+            .voutstanding__button {
+                background-color: $palewhite;
+                color: $time-cloer;
+                padding: 7px 27px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .voutstanding__button:hover {
+                background-color: $yellow-color;
+                color: $palewhite;
+}
+}
+    }
+    .outstanding__img{
+        width: 30%;
+
+    }
+}
+.titles {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn ngang giữa */
+    align-items: center; /* Căn dọc giữa */
+    text-align: center;
+    img {
+        margin-top: 10px;
+        
+      }
+}
+.redwines{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    .redwines__product{
+        line-height: 2;
+        width: 25%;
+        a{
+            color:$secondary-color ;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .price {
+            position: relative;
+            font-size: 25px;
+            font-weight: bold;
+            color: $yellow-color;
+            .sale {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 18px;
+                color: $time-cloer;
+                text-decoration: line-through;
+            }
+          }
+          .redwines__button {
+            background-color: $secondary-color;
+            color: $primary-color;
+            padding: 5px 27px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    main{
+        margin: 0 30px;
+    }
+    .redwine{
+        .redwine__product{
+            width: 52%;
+            margin-right: 20px;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .redwine{
+        margin: 0 20px;
+        .redwine__product{
+            width: 100%;
+            margin: 0 20px;
+        }
+        .redwine__detail{
+            width: 100%;
+        }
+    }
+    .outstanding{
+        .voutstanding__product{
+            width: 100%;
+        }
+        .outstanding__img{
+            display: none;
+        }
+    }
+    .redwines{
+        .redwines__product{
+            width: 50%;
+            a{
+                font-size: 15px;
+            }
+            .price{
+                font-size: 15px;
+            }
+        }
+    }
+}

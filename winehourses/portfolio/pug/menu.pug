@@ -1,0 +1,8 @@
+section
+        nav.nv 
+        - var menuItems = ['Trang chủ','/', 'Sản Phẩm', '/', 'Rượu vang đỏ'];
+        - var links = ['#', '#','#','#','./redwine.html'];
+        ul.menu
+            each item, index in menuItems
+                a.menu__link(href=links[index])= item
+        img(src="./img/menu1.png", alt="")

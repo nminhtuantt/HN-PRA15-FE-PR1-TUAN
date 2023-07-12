@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    .container__map {
+      width: 68%;
+    }
+    img{
+      margin-bottom: 50px;
+    }
+    .container__button {
+      margin-left: auto;
+      background-color: $secondary-color;
+      color: $primary-color;
+      padding: 7px 35px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 110px;
+      cursor: pointer;
+  }
+    .container__contact {
+      p{
+        margin-bottom: 2px;
+      }
+      width: 30%;
+      padding-left: 20px;
+    }
+  }
+  input[type="name"],
+  input[type="email"],
+  input[type="subject"] {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: $input-color;
+  }
+  input[type="message"] {
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: $input-color;
+  }
+  @media only screen and (min-width: 768px){
+    .container {
+      margin: 0 30px;
+      .container__map {
+        width: 66%;
+      }
+    }
+}
+@media screen and (max-width: 767px){
+  .container {
+    .container__map {
+      width: 100%;
+  }
+  .container__contact {
+    display: none;
+  }
+}
+}

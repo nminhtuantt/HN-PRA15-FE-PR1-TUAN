@@ -1,0 +1,77 @@
+main 
+    div
+        div.redwine
+            div.redwine__product
+                img(src="./img/sp1.png", alt="")
+            div.redwine__detail
+                div.redwine__detail-logo
+                    h2 RƯỢU NHO NĂM 1987
+                        img(src="./img/titleleft-dark.png", alt="")
+                    p.price 330.000đ
+                    h3 MÀU SẮC
+                    div.color-picker
+                        div.orange
+                        div.black
+                        div.red
+                    h3 KÍCH CỠ
+                    div.select-container
+                        select
+                            option(value="small") Loại nhỏ
+                            option(value="medium") Loại trung bình
+                            option(value="large") Loại to
+                    h3 SỐ LƯỢNG
+                    div.quantity
+                        div.buttons
+                            button.increment(type="button") +
+                            input(type="text" value="1" readonly)
+                            button.decrement(type="button") -
+                            +button ('quantity__button', "window.location.href='#'", 'ADD TO CART')
+                    h3 MÔ TẢ
+                    p Một số chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hoá của protein béo.
+
+        div.outstanding
+            div.voutstanding__product
+                div.voutstanding__product-button
+                    +button ('voutstanding__button', "window.location.href='#'", 'ĐẶC ĐIỂM NỔI BẬT')
+                    +button ('voutstanding__button', "window.location.href='#'", 'THÔNG TIN SẢN PHẨM')
+                    +button ('voutstanding__button', "window.location.href='#'", 'ĐÁNH GIÁ')
+                    p Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần đùi. Sau đây là những item vừa tredy lại vừa có tác dụng hiệu quả trong việc điều chỉnh đôi chân to của bạn. Mùa hè là mùa của những bộ cánh thoả mái, thoáng mát và hầu như những cô gái nào cũng muốn khoe chân tối đa. Tuy nhiên điều này lại không hề dê dàng đối vối những cố gái sở hữu đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài 
+                    p Mùa hè là mùa của những bộ cánh thoả mái thoáng mát hẳn cô gái nào cũng muốn khoe đôi chân tối đa. Tuy nhiên điều này lại khoongheef dễ dàng đối với nhưng cô gái đôi chân to
+            div.outstanding__img
+                img(src="./img/sp2.png", alt="")
+        div.titles
+            h2 SẢN PHẨM LIÊN QUAN
+            img(src="./img/title-dark.png", alt="")
+        div.redwines
+            div.redwines__product
+                img(src="./img/sp3.jpg", alt="")
+                a(href="") RƯỢU VANG ĐÀ LẠT 
+                div.price
+                    span.main 370.000đ
+                    span.sale - 450.000đ
+                +button ('redwines__button', "window.location.href='#'", 'ADD TO CART')
+            div.redwines__product
+                img(src="./img/sp4.jpg", alt="")
+                a(href="") RƯỢU VANG ĐÀ LẠT
+                div.price
+                    span.main 370.000đ
+                    span.sale - 450.000đ
+                +button ('redwines__button', "window.location.href='#'", 'ADD TO CART')
+            div.redwines__product
+                img(src="./img/sp5.jpg", alt="")
+                a(href="") RƯỢU VANG ĐÀ LẠT 
+                div.price
+                    span.main 370.000đ
+                    span.sale -  450.000đ
+                +button ('redwines__button', "window.location.href='#'", 'ADD TO CART')
+            div.redwines__product
+                img(src="./img/sp6.jpg", alt="")
+                a(href="") RƯỢU VANG ĐÀ LẠT
+                div.price
+                    span.main 370.000đ 
+                    span.sale -450.000đ 
+                +button ('redwines__button', "window.location.href='#'", 'ADD TO CART')
+
+
+
+    

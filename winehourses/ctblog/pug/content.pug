@@ -1,0 +1,39 @@
+main 
+    div.login
+        p.login__link BLOG
+            img.login__img(src="./img/titleleft-dark.png", alt="")
+    div.container
+        .container__content
+            h3 BÀI VIẾT MỚI NHẤT
+            div.container__posts
+                +post("./img/ctblog1.png", "CÁCH SẮP XẾP NỘI THẤT TRONG NHÀ", "12/06/2015")
+            div.container__posts
+                +post("./img/ctblog2.png", "CÁCH SẮP XẾP NỘI THẤT TRONG NHÀ", "12/06/2015")
+            div.container__posts
+                +post("./img/ctblog3.png", "CÁCH SẮP XẾP NỘI THẤT TRONG NHÀ", "12/06/2015")
+            h3 BLOG TAGS
+            +button('content__button', "window.location.href='#'", 'Đồng hồ')
+            +button('content__button', "window.location.href='#'", 'Túi')
+            +button('content__button', "window.location.href='#'", 'Phụ kiện')
+            +button('content__button', "window.location.href='#'", 'Giày')
+            +button('content__button', "window.location.href='#'", 'Sandal')
+            +button('content__button', "window.location.href='#'", 'Áo sơ mi')
+            +button('content__button', "window.location.href='#'", 'Nước hoa')
+            +button('content__button', "window.location.href='#'", 'Trẻ em')
+            +button('content__button', "window.location.href='#'", 'Thời trang nữ')
+            h3 LATEST VIDEOS
+            div.container__conten-img
+                img(src="./img/ctblog6.png", alt="")
+        div.container__contents
+            div.container__contents-img
+                img(src="./img/ctblog5.png", alt="")
+                h3 VANG THĂNG LONG CLASSIC 
+                a(href="") Đăng bởi Giangle | 30|06|2015 | 60 bình luận 
+                p
+                    i Vang nổ Thăng Long có hương vị đặc trưng của rượu lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt đẩy ra trắng mịn. Vang nổ thăng long tạo cảm giác hương phấn êm dịu, vui tươi sản phẩm được đóng trai dung tishc 750ml. vang nổ Thăng Long có hương vị đặc trưng của rượu lên men tự nhiên từ hoa quả với độ rượu nhẹ bọt ga đầy trắng min. vang nổ thăng long tạo cảm giác hương phấn êm dịu, vui tươi sản phẩm được đóng trai dung tishc 750ml...
+            h2.container__contents-opinion
+                i ĐÓNG GÓP Ý KIẾN
+            +input-container('Tên *', 'name', 'name', 'name', '')
+            +input-container('email *', 'email', 'email', 'email', '')
+            +input-container('Ý Kiến * ', 'message', 'message', 'message', '')
+            +button('contents__button', "window.location.href='#'", 'GỬI Ý KIẾN')

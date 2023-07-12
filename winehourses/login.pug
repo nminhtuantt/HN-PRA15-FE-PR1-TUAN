@@ -1,0 +1,14 @@
+include ./pug//mixins
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel='stylesheet' href='./css/styes.css')
+    body
+        include ./pug/header
+        .wrapper
+            include ./login/pug/menu
+            include ./login/pug/content
+            include ./pug/footer

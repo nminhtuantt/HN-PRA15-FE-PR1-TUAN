@@ -1,0 +1,34 @@
+mixin button(className, onClickFn, buttonText)
+    button.carts__button(class=className, onclick=onClickFn)= buttonText
+
+mixin menu(menuItems, links)
+  ul.menu
+    each item, index in menuItems
+      li
+        a.menu__link(href=links[index])= item
+mixin blog__content(imageSrc, title, author, date, content, link)
+  .blog__content
+    img(src=imageSrc, alt="")
+    a.blog__content-title(href="./ctblog.html")= title
+    a.blog__content-time(href="#") Đăng bởi #{author} | #{date} | 60 bình luận
+    a.blog__content-item(href="./ctblog.html")= content
+    a.blog__content-meta(href="./ctblog.html") #{link}
+mixin input-container(labelText, inputType, inputId, inputName, inputPlaceholder)
+  .input-container
+    label(for=inputId)= labelText
+    input(type=inputType id=inputId name=inputName placeholder=inputPlaceholder)
+mixin table-row(id, name, code, date1, date2, status, price)    
+  tr
+    td= id
+    td= name
+    td= code
+    td= date1
+    td= date2
+    td= status
+    td= price
+mixin post(imageSrc, title, date)
+  .container__postss
+    img(src=imageSrc, alt="")
+  .container__postss
+      a(href="")= title
+      p= date

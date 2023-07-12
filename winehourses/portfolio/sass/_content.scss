@@ -1,0 +1,98 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    &__product {
+        width: 25%;
+        a{
+            text-decoration: none; /* bỏ gạch chân */
+            color: $time-cloer;
+        }
+        li{
+            list-style-type: none;
+        }
+        .content__button {
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        
+        .content__button:hover {
+            background-color:$yellow-color;
+            }
+    }
+    &__products {
+        width: 73%;
+        .redwiness{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            .redwiness__product{
+                line-height: 2;
+                width: 33.33%;
+                a{
+                    color:$secondary-color ;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+                .price {
+                    position: relative;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: $yellow-color;
+                    .sale {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 18px;
+                        color: $time-cloer;
+                        text-decoration: line-through;
+                    }
+                  }
+                  .redwiness__button {
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                    padding: 5px 27px;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .portfolio {
+        &__product {
+            width: 23%;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .portfolio{
+        .portfolio__product{
+            display: none;
+        }
+        .portfolio__products{
+            margin: 0 10px;
+            width: 100%;
+            .redwiness{
+                .redwiness__button{
+                    font-size: 8px;
+                }
+                .redwiness__product{
+                    a{
+                        font-size: 15px;
+                    }
+                    .price{
+                        font-size: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+}

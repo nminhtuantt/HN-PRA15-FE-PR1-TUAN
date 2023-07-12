@@ -1,0 +1,19 @@
+header.header
+  .header__top
+    nav
+      - var menusItems = ['Tài khoản của tôi', 'Trạng thái đơn hàng', 'Danh sách ưu thích', 'Giỏ hàng', 'Đăng nhập', 'Đăng ký'];
+      - var linkss = ['#', './order.html', './portfolio.html', './cart.html', './login.html', './register.html'];
+      ul.menus
+        each item, index in menusItems
+          li.menus__item
+            a.menus__link(href=linkss[index])= item 
+  .header__container
+    .logo
+      img(src="./img/logo1.png", alt="Logo")
+    nav
+      - var menuItems = ['TRANG CHỦ', 'RƯỢU VANG ĐỎ', 'RƯỢU TRẮNG', 'CHAMPAGNE', 'THÔNG TIN', 'BLOG', 'LIÊN HỆ'];
+      - var links = ['#', './redwine.html', '#', '#', '#', './blog.html', './contact.html'];
+      ul.menu
+        each item, index in menuItems
+          li.menu__item
+            a.menu__link(href=links[index])= item

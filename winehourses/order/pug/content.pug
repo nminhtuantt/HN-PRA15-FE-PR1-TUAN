@@ -1,0 +1,46 @@
+main 
+    div.login
+        p.login__link ĐƠN HÀNG
+            img.login__img(src="./img/titleleft-dark.png", alt="")
+    .order
+        div.order__list
+            div.order__list-box
+                h3.box-content DANH SÁCH ĐƠN HÀNG
+                a(href="") Tất cả trạng thái(16) |
+                a(href="")   Đang huỷ(10)   |
+                a(href="")  Chưa duyệt (0)  |
+                a(href="")   Đã duyệt(0)  |
+                a(href="")    Đang thanh toán - chờ mua hàng(0)  |
+                a(href="")    Đã mua hàng (0)  |
+                a(href="")  Hàng đã về - chờ mua hàng(0) |
+                a(href="")   Đac kết thúc (16) 
+            table.table
+                tr
+                    th STT
+                    th MÃ HOÁ NGÀY ĐƠN HÀNG
+                    th KHO NHẬN HÀNG
+                    th SỐ SẢN PHẨM
+                    th TỔNG TIỀN 
+                    th TÌNH TRẠNG
+                    th THAO TÁC
+                tr
+                    +table-row('01', 'LEANHGIANG89 - 17062015 01:16 1/03/2015', 'HÀ ĐÔNG', '7', '350.000đ', 'Đã hoàn thành','Chi tiết')
+                tr
+                    +table-row('02', 'LEANHGIANG89 - 17062015 01:16 1/03/2015', 'HÀ ĐÔNG', '7', '350.000đ', 'Đã hoàn thành','Chi tiết')
+                tr
+                    +table-row('03', 'LEANHGIANG89 - 17062015 01:16 1/03/2015', 'HÀ ĐÔNG', '7', '350.000đ', 'Đã hoàn thành','Chi tiết')
+                tr
+                    +table-row('04', 'LEANHGIANG89 - 17062015 01:16 1/03/2015', 'HÀ ĐÔNG', '7', '350.000đ', 'Đã hoàn thành','Chi tiết')
+                tr
+                    +table-row('05', 'LEANHGIANG89 - 17062015 01:16 1/03/2015', 'HÀ ĐÔNG', '7', '350.000đ', 'Đã hoàn thành','Chi tiết')
+                tr
+                    +table-row('06', 'LEANHGIANG89 - 17062015 01:16 1/03/2015', 'HÀ ĐÔNG', '7', '350.000đ', 'Đã hoàn thành','Chi tiết')
+                tr
+                    +table-row('07', 'LEANHGIANG89 - 17062015 01:16 1/03/2015', 'HÀ ĐÔNG', '7', '350.000đ', 'Đã hoàn thành','Chi tiết')
+        div.order__item
+            div.order__item-box
+             h3 THÔNG TIN KHÁCH HÀNG
+             P leanhgiang89@gmail.com
+             p Toà nhà Hà Nội group, 442 Đội Cấn, Ba Đình, Hà Nội
+             p (04)378299182
+             a(href=" ")  Chi tiết liên lạc

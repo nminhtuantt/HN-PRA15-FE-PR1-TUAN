@@ -1,0 +1,17 @@
+main 
+    div.login
+        p.login__link LIÊN HỆ
+            img.login__img(src="./img/titleleft-dark.png", alt="")
+    div.container
+        div.container__map
+            img(src="./img/map.png", alt="")
+            +input-container('Your name', 'name', 'name', 'name', '')
+            +input-container('Your email', 'email', 'email', 'email', '')
+            +input-container('Subject', 'subject', 'subject', 'subject', '')
+            +input-container('Your Message ', 'message', 'message', 'message', '')
+            +button('container__button', "window.location.href='#'", 'Gửi')
+        div.container__contact
+            img(src="./img/logo4.png", alt="")
+            p Tầng 4 toà nhà hà Nội Group số 442 đội cấn, P.Công Vị, Q.Ba Đình, Hà Nội    
+            p (04)09434344
+            p  support@milano.com

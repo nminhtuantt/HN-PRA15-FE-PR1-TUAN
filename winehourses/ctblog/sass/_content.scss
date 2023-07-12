@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    &__content {
+        width: 25%;
+        .content__button {
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        
+        .content__button:hover {
+            background-color:$yellow-color;
+            }
+        h3{
+            margin-top: 30px;
+        }
+        .container__conten-img{
+            margin-top: 20px;
+        }
+    }
+    &__contents {
+        width: 73%;
+    }
+        &__contents-img{
+            h3{
+                margin-right: 0px;
+                font-size: 25px;
+            }
+            a{
+                font-size: 19px;
+                color:$time-cloer;
+                text-decoration: none;
+            }
+            p{
+                font-size: 20px;
+                color: $time-cloer;
+            }
+    
+    }
+}
+
+        .container__posts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .container__postss {
+                p{
+                    text-align: center;
+                    font-size: 15px;
+                    color: $time-cloer;
+                }
+                a{
+                    color: $secondary-color;
+                    text-decoration: none;
+                }
+                margin-top: 20px;
+                font-size: 14px;
+                flex-basis: 49%;
+            }
+
+        }
+        .container__posts > div.container__postss {
+            margin-bottom: -50px;
+        }
+        .container__contents-opinion{
+            margin: 40px;
+    }
+    input[type="email"],
+            input[type="subject"] {
+                height: 100%;
+                width: 100%;
+                font-size: 16px;
+                border: none;
+                border-radius: 4px;
+                padding: 8px;
+                background-color: $input-color;
+            }
+            input[type="message"] {
+                height: 100%;
+                width: 100%;
+                font-size: 100px;
+                border: none;
+                border-radius: 4px;
+                padding: 8px;
+                background-color: $input-color;
+            }
+            .contents__button {
+                margin-left: auto;
+                color: $secondary-color;
+                padding: 7px 35px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 110px;
+                cursor: pointer;
+            }
+@media only screen and (min-width: 768px){
+    .container {
+        &__content {
+            width: 24%;
+        }
+        .container__content{
+            .container__posts{
+                font-size: 5px;
+            }
+    }
+    }
+}
+    @media screen and (max-width: 767px){
+        .container {
+            padding: 0 20px;
+            &__content {
+                display: none;
+            }
+            &__contents{
+                width: 100%;
+            }
+        }
+    }
